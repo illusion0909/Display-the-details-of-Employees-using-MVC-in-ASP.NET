@@ -1,0 +1,22 @@
+﻿@model IEnumerable<DotNet_Project4.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Employee List</h2>
+
+@foreach (var item in Model)
+{
+    <b>Employee No:</b>@item.Empno
+    <br />
+    <b>Employee Name:</b>@item.Ename
+    <br />
+    <b>Employee Address:</b>@item.Eaddress
+    <br />
+    <b>Employee Salary:</b>@item.Esalary
+    <br />
+    <br />
+    <br />
+}
+
